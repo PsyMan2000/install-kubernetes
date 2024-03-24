@@ -1,7 +1,7 @@
 # install-kubernetes
 Personal repo for kubernetes deployment on bare metal or VM cloud-init after I have forgotten how to do it again :-)
 
-### ALL Credit go to Olorunfemi Kawonise @ https://bit.ly/3PAgkHp which gave me the first success in deploying kubernetes from kubeadm - Thanks for the help Olorunfemi, this script is a slight tweak on that one to migrate to the new repo. I copied a few steps verbatim too for my own reminder in case the medium page vanishes in future.
+### ALL Credit goes to Olorunfemi Kawonise @ https://bit.ly/3PAgkHp which gave me the first, easy to follow success in deploying kubernetes from kubeadm - Thanks for the help Olorunfemi, this script is a slight tweak on that one to migrate to the new repo. I copied a few steps verbatim too for my own reminder in case the medium page vanishes in future.
 
 #### First become root on a fresh ubuntu master node with git installed
 ```
