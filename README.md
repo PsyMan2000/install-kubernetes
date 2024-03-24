@@ -5,6 +5,8 @@ Personal repo for kubernetes deployment on bare metal or VM cloud-init after I h
 
 #### First become root on a fresh ubuntu master node with git installed
 ```
+sudo -i
+```
 git clone https://github.com/PsyMan2000/install-kubernetes
 ```
 #### run the script to install Kubernetes (change for version first - eg future 1.30 etc)
