@@ -1,9 +1,9 @@
 # install-kubernetes
-Personal repo for kubernetes deployment on bare metal
+Personal repo for kubernetes deployment on bare metal or VM cloud-init after I have forgotten how to do it again :-)
 
 copied from Olorunfemi Kawonise and edited to kubernetes repo migration.
 
-become root on fresh ubuntu node
+become root on fresh ubuntu node with git installed
 ```
 git clone https://github.com/PsyMan2000/install-kubernetes
 ```
