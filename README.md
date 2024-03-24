@@ -24,6 +24,8 @@ kubeadm init
 
 The `kubeconfig` file is a central configuration file that allows you to authenticate, interact with, and manage Kubernetes clusters effectively. It encapsulates authentication credentials, context information, cluster details, and more, making it a critical component for anyone working with Kubernetes clusters. (I actually did this on a non node member linux machine too, my workhorse with ansible, terraform, etc)
 
+The installer will end up spitting out the join command you can run as root on any worker nodes. or see below.
+
 
 #### exit root to your normal user  
  
