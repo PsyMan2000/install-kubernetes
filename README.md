@@ -1,13 +1,13 @@
 # install-kubernetes
 Personal repo for kubernetes deployment on bare metal or VM cloud-init after I have forgotten how to do it again :-)
 
-Credits go to Olorunfemi Kawonise @ https://bit.ly/3PAgkHp which gave me the first success in deploying kubernetes from kubeadm - Thanks for the help Olorunfemi, this script is a slight tweak on that one to migrate to the new repo. I copied a few steps verbatim too for my own reminder in case the medium page vanishes in future.
+### ALL Credit go to Olorunfemi Kawonise @ https://bit.ly/3PAgkHp which gave me the first success in deploying kubernetes from kubeadm - Thanks for the help Olorunfemi, this script is a slight tweak on that one to migrate to the new repo. I copied a few steps verbatim too for my own reminder in case the medium page vanishes in future.
 
-First become root on a fresh ubuntu master node with git installed
+#### First become root on a fresh ubuntu master node with git installed
 ```
 git clone https://github.com/PsyMan2000/install-kubernetes
 ```
-#### run the script to install Kubernetes (change for version first - 1.29)
+#### run the script to install Kubernetes (change for version first - eg future 1.30 etc)
 ```
 sh install-kubernetes/install_kubernetes.sh
 ```
@@ -22,7 +22,7 @@ kubeadm init
 The `kubeconfig` file is a central configuration file that allows you to authenticate, interact with, and manage Kubernetes clusters effectively. It encapsulates authentication credentials, context information, cluster details, and more, making it a critical component for anyone working with Kubernetes clusters. (I actually did this on a non node member linux machine too, my workhorse with ansible, terraform, etc)
 
 
-#exit root to your normal user  
+#### exit root to your normal user  
  
 ```
 mkdir -p $HOME/.kube
@@ -33,7 +33,7 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 ```
 sudo chown $(id -u):$(id -g) $HOME/.kube/config  
 ```
-#to verify, if kubectl is working or not, run the following command.  
+#### to verify, if kubectl is working or not, run the following command.  
 ```
 kubectl get pod -A
 ```
@@ -42,7 +42,7 @@ kubectl get pod -A
 ```
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml  
 ```
-#verify if weave is deployed successfully  
+#### verify if weave is deployed successfully  
 ```
 kubectl get pods -A
 ```
